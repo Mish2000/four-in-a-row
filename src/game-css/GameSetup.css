@@ -1,0 +1,96 @@
+
+:root {
+    --primary-color: #ffd700;
+    --primary-color-hover: #daa520;
+    --background-light: rgba(0, 0, 0, 0.6);
+    --border-radius: 20px;
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    --font-color-primary: #ffd700;
+    --error-color: #e74c3c;
+    --transition-fast: 0.2s ease;
+    --input-field-background: #ffffff;
+}
+
+.setupContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: var(--background-light);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin: 50px auto;
+    font-family: 'Arial', sans-serif;
+    color: var(--font-color-primary);
+}
+
+.setupInput, .startButton {
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    outline: none;
+    width: calc(100% - 30px);
+    margin: 10px 0;
+    box-shadow: none;
+    background-color: var(--input-field-background);
+    color: var(--font-color-primary);
+}
+
+.startButton {
+    background-color: var(--primary-color);
+    color: #333;
+    cursor: pointer;
+    transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.startButton:hover, .startButton:focus {
+    background-color: var(--primary-color-hover);
+    outline: none;
+}
+
+.setupInput:focus {
+    border-color: var(--primary-color-hover);
+    box-shadow: 0 0 0 2px var(--primary-color-hover);
+}
+
+.gameTitle, .instructions, .inputLabel {
+    padding: 10px;
+    background-color: var(--background-light);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--font-color-primary);
+}
+
+.instructions {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.validationMessage {
+    color: var(--error-color);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.inputGroup, .additionalInstructions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.inputLabel {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}

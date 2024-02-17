@@ -1,0 +1,19 @@
+.cell {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.cell img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.cell img {
+    animation: fallAnimation 0.5s ease-out;
+}

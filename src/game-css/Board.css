@@ -1,0 +1,35 @@
+#board {
+    width: calc(100px * 7 + 20px * 6);
+    height: calc(100px * 6 + 20px * 5);
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 20px;
+    background: #FFA500;
+    border-radius: 8px;
+    border: solid blue;
+    border-width: 0 calc(100px + 40px) 0 calc(100px + 40px);
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.5);
+}
+
+ .displayMessage {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: #FFD700;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fallAnimation {
+    0% { transform: translateY(-600px); }
+    100% { transform: translateY(0); }
+}
+
+
+
